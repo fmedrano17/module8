@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background: black;
 }
 
 body {
@@ -28,4 +29,9 @@ body {
 
 .active {
     display: block;
+}
+
+.title {
+    color: white;
+    text-align: center;
 }
