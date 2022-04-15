@@ -1,34 +1,40 @@
 let data = [
     {
-        name: 'Buddy',
-        age: '8'
+        name: 'Buddy (M)',
+        age: '8',
+        breed: 'Maltese'
     },
     {
-        name: 'Shrimp',
-        age: '2'
+        name: 'Shrimp (M)',
+        age: '2',
+        breed: 'Chihuahua'
     },
     {
-        name: 'Luna',
-        age: '4'
+        name: 'Luna (F)',
+        age: '4',
+        breed: 'Beagle'
     },
     {
-        name: 'Max',
-        age: '1'
+        name: 'Max (M)',
+        age: '1',
+        breed: 'Mastiff'
     },
     {
-        name: 'Coco',
-        age: '12'
+        name: 'Coco (F)',
+        age: '12',
+        breed: 'German Shepherd'
     },
     {
-        name: 'Ivy',
-        age: '1'
+        name: 'Ivy (F)',
+        age: '1',
+        breed: 'Labrador Retriever'
     }
 ];
 
 const info = document.querySelector('#info');
 
 let details = data.map(function(item) {
-    return '<div>' + item.name + ' is ' + item.age + ' years old' + '</div>';
+    return '<div>' + item.name + ' is a ' + item.age + ' year(s) old ' + item.breed + '</div>';
 });
 
 info.innerHTML = details.join('\n');
